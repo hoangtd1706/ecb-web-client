@@ -1,0 +1,12 @@
+version: '2'
+services:
+  ecoba-web-client:
+    image: hoangtd1706/ecb-web-client
+    ports:
+      - 80:80
+    environment:
+      - EBC_API_URI=http://192.168.0.172
+      - AZURE_CLIENT_ID=0f297dc1-bee5-4c1f-92a6-043286710fd1
+      - AZURE_AUTHORITY=https://login.microsoftonline.com/2b5438a9-6a60-437b-afb7-2cc6fd444d86
+      - AZURE_REDIRET_URI=https://qas.ecoba.com.vn,
+      - AZURE_CACHE_LOCATION=localStorage
